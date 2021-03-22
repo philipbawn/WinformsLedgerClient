@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedgerFormsApp", "LedgerFormsApp\LedgerFormsApp.csproj", "{06574DB8-396B-4041-ADAA-AE38BDA6343A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06574DB8-396B-4041-ADAA-AE38BDA6343A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06574DB8-396B-4041-ADAA-AE38BDA6343A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06574DB8-396B-4041-ADAA-AE38BDA6343A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06574DB8-396B-4041-ADAA-AE38BDA6343A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD770F5F-B72C-48A6-A725-56535B78EC54}
+	EndGlobalSection
+EndGlobal
