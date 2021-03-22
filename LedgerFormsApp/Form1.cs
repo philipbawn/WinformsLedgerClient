@@ -59,5 +59,11 @@ namespace LedgerFormsApp
             dtpStart.Value = new DateTime(year, 1, 1);
             dtpEnd.Value = new DateTime(year, 12, 31);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmTransaction newTransaction = new frmTransaction();
+            newTransaction.ShowDialog();
+        }
     }
 }

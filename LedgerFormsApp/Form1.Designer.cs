@@ -36,6 +36,7 @@ namespace LedgerFormsApp
             this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.tranLookupProgress = new System.Windows.Forms.ProgressBar();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@ namespace LedgerFormsApp
             // 
             this.button1.Location = new System.Drawing.Point(881, 367);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 69);
+            this.button1.Size = new System.Drawing.Size(117, 69);
             this.button1.TabIndex = 0;
             this.button1.Text = "Display Transaction Line Items";
             this.button1.UseVisualStyleBackColor = true;
@@ -101,11 +102,22 @@ namespace LedgerFormsApp
             this.tranLookupProgress.Size = new System.Drawing.Size(321, 26);
             this.tranLookupProgress.TabIndex = 7;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(1004, 367);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(108, 69);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add Manual Transaction";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 456);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tranLookupProgress);
             this.Controls.Add(this.dtpEnd);
             this.Controls.Add(this.label2);
@@ -115,6 +127,7 @@ namespace LedgerFormsApp
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ledger Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -132,6 +145,7 @@ namespace LedgerFormsApp
         private System.Windows.Forms.DateTimePicker dtpEnd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar tranLookupProgress;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 
