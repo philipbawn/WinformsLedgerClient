@@ -123,7 +123,7 @@ namespace LedgerFormsApp
             // lblWarning
             // 
             this.lblWarning.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWarning.Location = new System.Drawing.Point(12, 132);
+            this.lblWarning.Location = new System.Drawing.Point(12, 130);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(816, 25);
             this.lblWarning.TabIndex = 9;
