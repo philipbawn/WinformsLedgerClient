@@ -29,7 +29,6 @@ namespace LedgerFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,9 +90,9 @@ namespace LedgerFormsApp
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(681, 374);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 17);
+            this.label2.Size = new System.Drawing.Size(34, 17);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Start:";
+            this.label2.Text = "End:";
             // 
             // tranLookupProgress
             // 
@@ -115,7 +114,6 @@ namespace LedgerFormsApp
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Ledger Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);

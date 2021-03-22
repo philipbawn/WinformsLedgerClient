@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="S:\ledger\ledger.proto" GrpcServices="Client">
+    <Protobuf Include="ledger.proto" GrpcServices="Client">
       <Link>Protos\ledger.proto</Link>
     </Protobuf>
   </ItemGroup>
