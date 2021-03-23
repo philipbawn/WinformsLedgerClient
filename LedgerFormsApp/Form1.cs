@@ -65,5 +65,11 @@ namespace LedgerFormsApp
             frmTransaction newTransaction = new frmTransaction();
             newTransaction.ShowDialog();
         }
+
+        private void mnuAccounts_Click(object sender, EventArgs e)
+        {
+            frmAccounts newFrmAccounts = new frmAccounts();
+            newFrmAccounts.ShowDialog();
+        }
     }
 }

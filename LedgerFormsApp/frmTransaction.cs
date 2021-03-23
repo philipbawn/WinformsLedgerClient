@@ -22,7 +22,7 @@ namespace LedgerFormsApp
         {
             using var channel = GrpcChannel.ForAddress("http://127.0.0.1:50051");
             var client = new Transaction.Transactor.TransactorClient(channel);
-            var reply = client.GetTB(new Transaction.TBRequest() { Date = DateTime.Today.ToString("yyyy-MM-dd") });
+            var reply = client.GetTB(new Transaction.TBRequest() { Date = DateTime.Today.AddDays(1).ToString("yyyy-MM-dd") });
             foreach (var tbLine in reply.Lines)
             {
                 this.comboBox1.Items.Add(tbLine.Accountname);
@@ -68,6 +68,11 @@ namespace LedgerFormsApp
         private void txtDebitAmount_TextChanged(object sender, EventArgs e)
         {
             WarnIfNotEqual();
+        }
+
+        private void lblWarning_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

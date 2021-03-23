@@ -37,7 +37,11 @@ namespace LedgerFormsApp
             this.label2 = new System.Windows.Forms.Label();
             this.tranLookupProgress = new System.Windows.Forms.ProgressBar();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Tools = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAccounts = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -112,6 +116,31 @@ namespace LedgerFormsApp
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Tools});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1124, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // Tools
+            // 
+            this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAccounts});
+            this.Tools.Name = "Tools";
+            this.Tools.Size = new System.Drawing.Size(46, 20);
+            this.Tools.Text = "Tools";
+            // 
+            // mnuAccounts
+            // 
+            this.mnuAccounts.Name = "mnuAccounts";
+            this.mnuAccounts.Size = new System.Drawing.Size(124, 22);
+            this.mnuAccounts.Text = "Accounts";
+            this.mnuAccounts.Click += new System.EventHandler(this.mnuAccounts_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -125,12 +154,16 @@ namespace LedgerFormsApp
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ledger Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,6 +179,9 @@ namespace LedgerFormsApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar tranLookupProgress;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Tools;
+        private System.Windows.Forms.ToolStripMenuItem mnuAccounts;
     }
 }
 

@@ -40,6 +40,10 @@ namespace LedgerFormsApp
             this.label4 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.lblWarning = new System.Windows.Forms.Label();
+            this.txtDescribeDebit = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDescribeCredit = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -123,18 +127,55 @@ namespace LedgerFormsApp
             // lblWarning
             // 
             this.lblWarning.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWarning.Location = new System.Drawing.Point(12, 130);
+            this.lblWarning.Location = new System.Drawing.Point(12, 158);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(816, 25);
             this.lblWarning.TabIndex = 9;
             this.lblWarning.Text = "Type the ledger entries you want to make above.";
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWarning.Click += new System.EventHandler(this.lblWarning_Click);
+            // 
+            // txtDescribeDebit
+            // 
+            this.txtDescribeDebit.Location = new System.Drawing.Point(112, 108);
+            this.txtDescribeDebit.Name = "txtDescribeDebit";
+            this.txtDescribeDebit.Size = new System.Drawing.Size(176, 23);
+            this.txtDescribeDebit.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Describe:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(320, 114);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 15);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Describe:";
+            // 
+            // txtDescribeCredit
+            // 
+            this.txtDescribeCredit.Location = new System.Drawing.Point(399, 111);
+            this.txtDescribeCredit.Name = "txtDescribeCredit";
+            this.txtDescribeCredit.Size = new System.Drawing.Size(176, 23);
+            this.txtDescribeCredit.TabIndex = 12;
             // 
             // frmTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 232);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtDescribeCredit);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtDescribeDebit);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -167,5 +208,9 @@ namespace LedgerFormsApp
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.TextBox txtDescribeDebit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtDescribeCredit;
     }
 }
